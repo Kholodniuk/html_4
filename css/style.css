@@ -1,0 +1,292 @@
+/*CSS Reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MAIN DOCUMENT */
+
+html{
+  height: 100%;
+}
+
+body{
+  line-height: 1; /* CSS reset option */
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1297b6+0,1297b8+0,128aa5+0,138aa8+0,138ba6+3,5ef0ff+3,10cde1+3,1acfe2+4,42d8e7+7,66deec+9,7be3f0+9,80e5ef+10,89e5f0+10,a1ebf4+11,a1ecf2+11,b3eff7+12,b7f1f5+12,cbf4f8+13,d7f6f9+14,e0f9fd+15,f1fdfd+16,ffffff+17,40c6d2+17,3ec3d2+19,3dc3cf+19,3dc2d1+19,37bccb+21,38bdce+21,33b8c9+22,34b7cb+22,32b5c7+22,2db1c6+24,26aabf+25,27a9c1+25,23a5bd+26,21a3bd+27,1fa1bb+27,1b9db7+28,1c9dba+28,1899b6+29,1192b1+31,1088ab+56,0d81a6+66,0e7ea6+75,0d7da3+75,0d7da5+77,0c7ca2+77,0e7ba4+81,0b76a0+88,0d74a1+95,0c739e+96,0c739e+100 */
+  background: #1297b6; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzEyOTdiNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMTI5N2I4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMxMjhhYTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzEzOGFhOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMlIiBzdG9wLWNvbG9yPSIjMTM4YmE2IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMyUiIHN0b3AtY29sb3I9IiM1ZWYwZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIzJSIgc3RvcC1jb2xvcj0iIzEwY2RlMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQlIiBzdG9wLWNvbG9yPSIjMWFjZmUyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNyUiIHN0b3AtY29sb3I9IiM0MmQ4ZTciIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI5JSIgc3RvcC1jb2xvcj0iIzY2ZGVlYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjklIiBzdG9wLWNvbG9yPSIjN2JlM2YwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAlIiBzdG9wLWNvbG9yPSIjODBlNWVmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAlIiBzdG9wLWNvbG9yPSIjODllNWYwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTElIiBzdG9wLWNvbG9yPSIjYTFlYmY0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTElIiBzdG9wLWNvbG9yPSIjYTFlY2YyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTIlIiBzdG9wLWNvbG9yPSIjYjNlZmY3IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTIlIiBzdG9wLWNvbG9yPSIjYjdmMWY1IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTMlIiBzdG9wLWNvbG9yPSIjY2JmNGY4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTQlIiBzdG9wLWNvbG9yPSIjZDdmNmY5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTUlIiBzdG9wLWNvbG9yPSIjZTBmOWZkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTYlIiBzdG9wLWNvbG9yPSIjZjFmZGZkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTclIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTclIiBzdG9wLWNvbG9yPSIjNDBjNmQyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTklIiBzdG9wLWNvbG9yPSIjM2VjM2QyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTklIiBzdG9wLWNvbG9yPSIjM2RjM2NmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTklIiBzdG9wLWNvbG9yPSIjM2RjMmQxIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjElIiBzdG9wLWNvbG9yPSIjMzdiY2NiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjElIiBzdG9wLWNvbG9yPSIjMzhiZGNlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjIlIiBzdG9wLWNvbG9yPSIjMzNiOGM5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjIlIiBzdG9wLWNvbG9yPSIjMzRiN2NiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjIlIiBzdG9wLWNvbG9yPSIjMzJiNWM3IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjQlIiBzdG9wLWNvbG9yPSIjMmRiMWM2IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjUlIiBzdG9wLWNvbG9yPSIjMjZhYWJmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjUlIiBzdG9wLWNvbG9yPSIjMjdhOWMxIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjYlIiBzdG9wLWNvbG9yPSIjMjNhNWJkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjclIiBzdG9wLWNvbG9yPSIjMjFhM2JkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjclIiBzdG9wLWNvbG9yPSIjMWZhMWJiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjglIiBzdG9wLWNvbG9yPSIjMWI5ZGI3IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjglIiBzdG9wLWNvbG9yPSIjMWM5ZGJhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjklIiBzdG9wLWNvbG9yPSIjMTg5OWI2IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMzElIiBzdG9wLWNvbG9yPSIjMTE5MmIxIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTYlIiBzdG9wLWNvbG9yPSIjMTA4OGFiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNjYlIiBzdG9wLWNvbG9yPSIjMGQ4MWE2IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNzUlIiBzdG9wLWNvbG9yPSIjMGU3ZWE2IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNzUlIiBzdG9wLWNvbG9yPSIjMGQ3ZGEzIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNzclIiBzdG9wLWNvbG9yPSIjMGQ3ZGE1IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNzclIiBzdG9wLWNvbG9yPSIjMGM3Y2EyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iODElIiBzdG9wLWNvbG9yPSIjMGU3YmE0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iODglIiBzdG9wLWNvbG9yPSIjMGI3NmEwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iOTUlIiBzdG9wLWNvbG9yPSIjMGQ3NGExIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iOTYlIiBzdG9wLWNvbG9yPSIjMGM3MzllIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBjNzM5ZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(top, #1297b6 0%, #1297b8 0%, #128aa5 0%, #138aa8 0%, #138ba6 3%, #5ef0ff 3%, #10cde1 3%, #1acfe2 4%, #42d8e7 7%, #66deec 9%, #7be3f0 9%, #80e5ef 10%, #89e5f0 10%, #a1ebf4 11%, #a1ecf2 11%, #b3eff7 12%, #b7f1f5 12%, #cbf4f8 13%, #d7f6f9 14%, #e0f9fd 15%, #f1fdfd 16%, #ffffff 17%, #40c6d2 17%, #3ec3d2 19%, #3dc3cf 19%, #3dc2d1 19%, #37bccb 21%, #38bdce 21%, #33b8c9 22%, #34b7cb 22%, #32b5c7 22%, #2db1c6 24%, #26aabf 25%, #27a9c1 25%, #23a5bd 26%, #21a3bd 27%, #1fa1bb 27%, #1b9db7 28%, #1c9dba 28%, #1899b6 29%, #1192b1 31%, #1088ab 56%, #0d81a6 66%, #0e7ea6 75%, #0d7da3 75%, #0d7da5 77%, #0c7ca2 77%, #0e7ba4 81%, #0b76a0 88%, #0d74a1 95%, #0c739e 96%, #0c739e 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #1297b6 0%,#1297b8 0%,#128aa5 0%,#138aa8 0%,#138ba6 3%,#5ef0ff 3%,#10cde1 3%,#1acfe2 4%,#42d8e7 7%,#66deec 9%,#7be3f0 9%,#80e5ef 10%,#89e5f0 10%,#a1ebf4 11%,#a1ecf2 11%,#b3eff7 12%,#b7f1f5 12%,#cbf4f8 13%,#d7f6f9 14%,#e0f9fd 15%,#f1fdfd 16%,#ffffff 17%,#40c6d2 17%,#3ec3d2 19%,#3dc3cf 19%,#3dc2d1 19%,#37bccb 21%,#38bdce 21%,#33b8c9 22%,#34b7cb 22%,#32b5c7 22%,#2db1c6 24%,#26aabf 25%,#27a9c1 25%,#23a5bd 26%,#21a3bd 27%,#1fa1bb 27%,#1b9db7 28%,#1c9dba 28%,#1899b6 29%,#1192b1 31%,#1088ab 56%,#0d81a6 66%,#0e7ea6 75%,#0d7da3 75%,#0d7da5 77%,#0c7ca2 77%,#0e7ba4 81%,#0b76a0 88%,#0d74a1 95%,#0c739e 96%,#0c739e 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #1297b6 0%,#1297b8 0%,#128aa5 0%,#138aa8 0%,#138ba6 3%,#5ef0ff 3%,#10cde1 3%,#1acfe2 4%,#42d8e7 7%,#66deec 9%,#7be3f0 9%,#80e5ef 10%,#89e5f0 10%,#a1ebf4 11%,#a1ecf2 11%,#b3eff7 12%,#b7f1f5 12%,#cbf4f8 13%,#d7f6f9 14%,#e0f9fd 15%,#f1fdfd 16%,#ffffff 17%,#40c6d2 17%,#3ec3d2 19%,#3dc3cf 19%,#3dc2d1 19%,#37bccb 21%,#38bdce 21%,#33b8c9 22%,#34b7cb 22%,#32b5c7 22%,#2db1c6 24%,#26aabf 25%,#27a9c1 25%,#23a5bd 26%,#21a3bd 27%,#1fa1bb 27%,#1b9db7 28%,#1c9dba 28%,#1899b6 29%,#1192b1 31%,#1088ab 56%,#0d81a6 66%,#0e7ea6 75%,#0d7da3 75%,#0d7da5 77%,#0c7ca2 77%,#0e7ba4 81%,#0b76a0 88%,#0d74a1 95%,#0c739e 96%,#0c739e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1297b6', endColorstr='#0c739e',GradientType=0 ); /* IE6-8 */
+}
+
+.wrapper{
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: "Tahoma";
+}
+.topWrapper{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 35px;
+  background-color: #ffffff;
+  border: 0.2px solid #5fa5bb;
+  box-shadow: 0px 0px 30px 1px #333333;
+}
+
+/* HEADER */
+
+header{
+  height: 175px;
+  width: 100%;
+}
+.leftHeader{
+  float: left;
+  height: 100%;
+  width: 320px;
+  padding-left: 27px;
+  padding-top: 10px;
+}
+.logo{
+
+}
+.rightHeader{
+  float: right;
+  width: 372px;
+  height: 100%;
+  font-size: 12px;
+  color: #5fa5bb;
+}
+.contacts{
+  width: 160px;
+  height: 105px;
+  float: right;
+  padding-top: 7px;
+}
+.contacts>h3{
+  font-weight: bold;
+}
+.contacts>h3, .contacts>p{
+  float: left;
+}
+.contries{
+  width: 100%;
+  height: 68.5px;
+  float: right;
+}
+.contries li {
+float: left;
+height: 68.5px;
+width: 56px;
+background-position: center top;
+background-repeat: no-repeat;
+}
+
+.contries li a {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  color: #5fa5bb;
+  padding-top: 48px;
+}
+.india{
+  background-image: url(../img/i_flag.png);
+}
+.nepal{
+  background-image: url(../img/n_flag.png);
+}
+.tibet{
+  background-image: url(../img/t_flag.png);
+}
+.butan{
+  background-image: url(../img/b_flag.png);
+}
+.sriLanka{
+  background-image: url(../img/s_flag.png);
+}
+.maldive{
+  background-image: url(../img/m_flag.png);
+}
+
+/* Beach Foto */
+
+.beach{
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #128aa7;
+}
+
+/* DropDown Menu */
+
+.menu{
+  height: 32px;
+  width: 100%;
+  border-bottom: 1px solid black;
+  background-color: #333333;
+  padding: 0 40px;
+  font-size: 14px;
+}
+.menu li{
+  float: left;
+  display: block;
+  height: 100%;
+  margin: 0 30px;
+  padding: 0 15px 0 10px;
+  z-index: 1;
+  position: relative;
+}
+.menu a{
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  color: white;
+  line-height: 32px;
+}
+.dropDownMenu{
+  background-image: url(../img/white_triangles.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+.dropdown{
+  float: none;
+  position: absolute;
+  background-color: #333333;
+  display: none;
+}
+.dropdown li{
+  height: 30px;
+  min-width: 135px;
+  margin: 0;
+  padding: 0 15px 0 10px;
+}
+.menu li:hover .dropdown{
+  display: block;
+}
+
+/* Article */
+
+.leftPanel{
+  width: 20%;
+  height: 490px;
+  background-color: #edeef0;
+  float: left;
+  border-right: 1px solid black;
+  padding-bottom: 10px;
+}
+.firstSect{
+  height: 31%;
+  width: 100%;
+}
+.secondSect{
+  border-top: 1px solid black;
+  height: 50%;
+  width: 100%;
+}
+.thirdSect{
+  height: 18%;
+  width: 100%;
+  border-top: 1px solid black;
+}
+.centerPanel{
+  width: 59.8%;
+  height: 100%;
+  float: left;
+}
+.rightPanel{
+  width: 20%;
+  height: 490px;
+  background-color: #edeef0;
+  float: right;
+  border-left: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.firstSectRightPanel{
+  height: 52%;
+  width: 100%;
+}
+.secondSectRightPanel{
+  border-top: 1px solid black;
+  height: 33%;
+  width: 100%;
+}
+.thirdSectRightPanel{
+  height: 14%;
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+.leftPanel h2, .rightPanel h2{
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.leftPanel p, .rightPanel p{
+  font-size: 14px;
+  padding-left: 10px;
+  line-height: 150%;
+}
+
+/* Footer */
+
+footer{
+  width: 100%;
+  height: 35px;
+  color: #ffffff;
+  bottom: 0;
+}
+
+footer p{
+  text-align: center;
+}
+
+.clearfix:after{
+  content: '';
+  clear: both;
+  display: block;
+}
