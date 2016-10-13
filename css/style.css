@@ -208,55 +208,60 @@ background-repeat: no-repeat;
 
 /* Article */
 
+.panelContainer1 {
+	float:left;
+  width:100%;
+	background-color: #edeef0;
+	position: relative;
+	right: 60%;
+	border-right: 1px solid black;
+	box-sizing: border-box;
+}
+
+.panelContainer2 {
+  float:left;
+  width:100%;
+	background-color: white;
+	position: relative;
+	right: 20%;
+	clear: left;
+	border-right: 1px solid black;
+	box-sizing: border-box;
+}
+
+.panelContainer3 {
+	float:left;
+  width:100%;
+	background-color: #edeef0;
+	position: relative;
+	overflow: hidden;
+	clear: left;
+}
+
 .leftPanel{
   width: 20%;
-  height: 490px;
-  background-color: #edeef0;
   float: left;
-  border-right: 1px solid black;
+	position: relative;
+	overflow: hidden;
+	left: 80%;
   padding-bottom: 10px;
 }
-.firstSect{
-  height: 31%;
-  width: 100%;
-}
-.secondSect{
-  border-top: 1px solid black;
-  height: 50%;
-  width: 100%;
-}
-.thirdSect{
-  height: 18%;
-  width: 100%;
-  border-top: 1px solid black;
-}
 .centerPanel{
-  width: 59.8%;
-  height: 100%;
+  width: 60%;
   float: left;
+	position: relative;
+	overflow: hidden;
+	left: 80%;
+	border: 1px solid black;
+	box-sizing: border-box;
 }
 .rightPanel{
   width: 20%;
-  height: 490px;
-  background-color: #edeef0;
-  float: right;
-  border-left: 1px solid black;
+  float: left;
+	position: relative;
+	overflow: hidden;
+	left: 80%;
   padding-bottom: 10px;
-}
-
-.firstSectRightPanel{
-  height: 52%;
-  width: 100%;
-}
-.secondSectRightPanel{
-  border-top: 1px solid black;
-  height: 33%;
-  width: 100%;
-}
-.thirdSectRightPanel{
-  height: 14%;
-  width: 100%;
-  border-top: 1px solid black;
 }
 
 .leftPanel h2, .rightPanel h2{
